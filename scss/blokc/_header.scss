@@ -1,0 +1,355 @@
+.header {
+  padding: 25px 0px 25px;
+
+  &__top {
+    margin-bottom: 29px;
+  }
+
+  &__live {
+    display: none;
+  }
+
+  &__vxod.media,
+  &__cards.media,
+  &__burger.media.top1  {
+    display: none;
+  }
+
+  &__content-obertka {
+    min-height: 22px;
+  }
+
+  &__top-flex {
+    display: flex;
+    padding-top: 14px;
+  }
+
+  &__blok h6 {
+    font-size: 13px;
+    line-height: 12px;
+    color: #45494c;
+    margin-bottom: 14px;
+  }
+
+  &__blok-flex {
+    display: flex;
+  }
+
+  &__blok-flex input {
+    border: 1px solid #afafaf;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 239px;
+    height: 34px;
+    font-family: $Roboto;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #afafaf;
+    margin-right: 5px;
+  }
+
+  &__blok-flex button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #c41e3a;
+    background-blend-mode: multiply;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  &__seleted {
+    font-family: $medium;
+    font-size: 14px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #4b5c58;
+    display: flex;
+    align-items: center;
+    margin-right: 39px;
+  }
+
+  &__seleted img {
+    margin-right: 6px;
+  }
+
+  &__logo {
+    margin-right: 135px;
+    margin-top: -14px;
+  }
+
+  &__nav-top {
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__nav-top ul {
+    display: flex;
+  }
+
+  &__nav-top li {
+    margin-right: 23px;
+  }
+
+  &__nav-top li:last-child {
+    margin-right: 0px;
+  }
+
+  &__nav-top a {
+    font-size: 13px;
+    line-height: 12px;
+    color: #4b5c58;
+  }
+
+  &__tell {
+    font-size: 18px;
+    line-height: 17px;
+    font-family: $medium;
+    color: #45494c;
+    margin-right: 47px;
+  }
+
+  &__vxod {
+    font-family: $medium;
+    font-size: 14px;
+    line-height: 13px;
+    color: #4b5c58;
+    margin-right: 7px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__vxod img {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  &__cards {
+    font-family: $medium;
+    font-size: 14px;
+    line-height: 13px;
+    color: #4b5c58;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__cards img {
+    margin-left: 3px;
+  }
+
+
+  &__nav-bottom ul {
+    display: flex;
+  }
+
+  &__nav-bottom li {
+    margin-right: 23px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-bottom li a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-bottom li:last-child {
+    margin-right: 0px;
+  }
+
+  &__nav-bottom li:nth-child(1) {
+    font-family: $medium;
+    font-size: 16px;
+    line-height: 15px;
+    color: #45494c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__nav-bottom li:nth-child(2) a {
+    font-family: $medium;
+    font-size: 16px;
+    line-height: 15px;
+    color: #c41e3a;
+  }
+
+  &__nav-bottom li:nth-child(2) a img {
+    margin-right: 7px;
+  }
+
+  &__nav-bottom li:nth-child(3) a {
+    font-family: $medium;
+    font-size: 16px;
+    line-height: 15px;
+    color: #18ad83;
+  }
+
+  &__nav-bottom li:nth-child(3) a img {
+    margin-right: 7px;
+  }
+
+  &__nav-bottom li a {
+    color: #45494c;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: $medium;
+  }
+
+  &__burger {
+    width: 23px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 24px;
+  }
+
+  &__burger-polosa1,
+  &__burger-polosa,
+  &__burger-polosa3 {
+    background: #45494c;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.6s ease;
+  }
+
+  &__burger-polosa1.opend {
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+  }
+
+  &__burger-polosa.opend {
+    opacity: 0;
+  }
+
+  &__burger-polosa3.opend {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 7px;
+  }
+
+  &__burger-polosa3 {
+    margin-bottom: 0px;
+  }
+
+  &__burger-polosa1n,
+  &__burger-polosan,
+  &__burger-polosa3n {
+    background: #45494c;
+    height: 3px;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.6s ease;
+  }
+
+  &__burger-polosa1n.opend {
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+  }
+
+  &__burger-polosan.opend {
+    opacity: 0;
+  }
+
+  &__burger-polosa3n.opend {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 7px;
+  }
+
+  &__burger-polosa3n {
+    margin-bottom: 0px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 729px;
+    min-height: 640px;
+    background: #ffffff;
+    border: 1px solid #c41e3a;
+    box-sizing: border-box;
+    box-shadow: 12px 12px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    padding: 38px 35px 36px 40px;
+  }
+
+  &__menu-opend {
+    transition: all 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  &__burger.media {
+    display: none;
+  }
+
+  &__menu-opend.opend {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__menu ul {
+    display: block;
+  }
+
+  &__menu ul:nth-child(1) {
+    width: 151px;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__menu ul:nth-child(2) {
+    width: 189px;
+  }
+
+  &__menu ul:nth-child(3) {
+    width: 298px;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__nav-bottom &__menu ul:nth-child(3) a {
+    height: 30px;
+  }
+
+  &__nav-bottom li &__menu a {
+    font-size: 16px;
+    line-height: 15px;
+    color: #333333;
+    height: 40px;
+    position: relative;
+    width: 100%;
+    padding-left: 21px;
+    transition: all 0.5s ease;
+    font-family: "Gotham Pro-regular";
+  }
+
+  &__nav-bottom li &__menu a:hover {
+    color: #c41e3a;
+  }
+
+  &__menu a:hover::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #c41e3a;
+  }
+}

@@ -1,0 +1,640 @@
+.basket {
+  &__flex {
+    display: flex;
+  }
+
+  .basket  &__btn.width {
+   width: 191px;
+   margin-top: 40px;
+  }
+
+   .basket__checkbox-title a {
+    font-family: "Gotham Pro-regular";
+    font-size: 12px;
+    color: red;
+    display: inline;
+   }
+
+  
+ &__checkboxform {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__checkboxform a {
+    font-size: 16px;
+    color: #C41E3A;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+
+  &__checkboxform  &__checkbox-boxform {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    border: none;
+    background-color: none;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+[type="checkbox"] {
+    padding: 0;
+}
+
+
+label.basket__checkbox-titleform {
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  padding-left: 22px;
+}
+
+&__checkbox-titleform span {
+  color: red;
+}
+
+&__checkbox-titleform:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+border: 1px solid #C41E3A;
+border-radius: 1px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+}
+
+&__checkbox-titleform::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: #C41E3A;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .1s linear;
+ 
+}
+
+&__checkbox-boxform:checked + &__checkbox-titleform::after {
+  opacity: 1;
+}
+
+
+
+  &__payments-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 15px;
+    margin-bottom: 64px;
+  }
+
+  &__payments-blog {
+    width: 189px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #f9f9f9;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  &__payments-blog:hover {
+    box-shadow: 4px 4px 12px rgba(75, 92, 88, 0.12);
+  }
+
+  &__form-flex {
+    display: flex;
+    margin-top: 72px;
+  }
+
+  &__form-items {
+    width: 397px;
+  }
+
+  &__form-items.margin {
+    margin-top: -56px;
+  }
+
+  &__form-items:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__form-items label {
+    display: block;
+    font-size: 16px;
+    color: #4b5c58;
+    margin-bottom: 4px;
+  }
+
+  &__form-items label span {
+    color: red;
+  }
+
+  &__form-items input {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__form-items input:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__width {
+    display: block;
+    width: 189px;
+  }
+
+  &__checkboxway {
+    display: flex;
+    width: 100%;
+  }
+
+  &__checkboxway &__checkbox-boxway {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    border: none;
+    background-color: none;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 20px;
+  }
+
+  [type="checkbox"] {
+    padding: 0;
+  }
+
+  &__checkbox-titleway {
+    font-family: $medium;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__checkbox-titleway span.regular {
+    font-family: "Gotham Pro-regular";
+    margin-right: 10px;
+  }
+
+  &__checkbox-titleway span {
+    flex:  0 0 auto;
+  }
+
+  &__checkbox-titleway:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #c41e3a;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+  }
+
+  &__checkbox-titleway::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    background: #c41e3a;
+    top: 5px;
+    left: 1px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+
+  &__checkbox-boxway:checked + &__checkbox-titleway::after {
+    opacity: 1;
+  }
+
+  &__way {
+    max-width: 607px;
+    margin-top: 7px;
+  }
+
+  &__way h1 {
+    font-family: $medium;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 24px;
+  }
+
+  &__way h1.margin {
+    margin-top: 32px;
+  }
+
+  &__way-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  &__way-flex a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    font-family: $medium;
+    font-size: 14px;
+    color: #4b5c58;
+    line-height: 22px;
+    margin-bottom: 19px;
+    border: 1px solid #4b5c58;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0px 23px 0px 23px;
+    flex-grow: 1;
+    transition: all 0.5 ease;
+    text-transform: uppercase;
+  }
+
+  &__way-flex a:hover {
+    color: #c41e3a;
+    border: 1px solid #c41e3a;
+  }
+
+  &__way-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__way-text p {
+    font-size: 16px;
+    color: #000;
+    max-width: 363px;
+  }
+
+  &__way-text a {
+    font-family: $medium;
+    font-size: 16px;
+    color: #c41e3a;
+    text-decoration: underline;
+     margin-left: 10px;
+     flex: 0 0 auto;
+  }
+
+  &__way-stoimost {
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__way-stoimost.margin {
+    margin-bottom: 64px;
+  }
+
+  &__way-open {
+    margin-bottom: 0px;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.7s;
+    opacity: 0;
+  }
+
+  &__way-open.open {
+    height: auto;
+    min-height: 64px;
+    opacity: 1;
+    margin-bottom: 32px;
+    margin-top: -13px;
+  }
+
+  &__way-open:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__checkbox {
+    display: flex;
+    width: 100%;
+  }
+
+  &__checkbox &__checkbox-box {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    border: none;
+    background-color: none;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 20px;
+  }
+
+  [type="checkbox"] {
+    padding: 0;
+  }
+
+  &__checkbox-title {
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    padding-left: 16px;
+  }
+
+  .basket__arrange &__checkbox-title a {
+    font-family: "Gotham Pro-regular";
+    font-size: 12px;
+    color: red;
+    display: inline;
+  }
+
+  &__checkbox-title:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    border: 1px solid #c41e3a;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  &__checkbox-title::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #c41e3a;
+    border-radius: 1px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    background-size: 12px 10px;
+  }
+
+  &__checkbox-box:checked + &__checkbox-title::after {
+    opacity: 1;
+  }
+
+  .basket__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 47px;
+    background: #f28705;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: $medium;
+    color: #fff;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+
+  .basket__scidka {
+    font-size: 16px;
+    color: #000;
+  }
+
+  .basket__scidka span.red {
+    color: red;
+  }
+
+  &__blog {
+    flex-grow: 1;
+    margin-right: 8px;
+  }
+
+  &__blog1 {
+    max-width: 397px;
+  }
+
+  &__blog-box {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+
+  &__blog-box:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__blog-box img {
+    margin-right: 24px;
+  }
+
+  &__blog-box h4 {
+    font-family: $medium;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  &__blog-box p {
+    font-size: 16px;
+    color: #4b5c58;
+    margin-bottom: 15px;
+  }
+
+  &__blog-box h2 {
+    font-family: $medium;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 16px;
+    width: 90px;
+  }
+
+  &__blog-box s {
+    font-size: 16px;
+    color: #bdbdbd;
+    margin-bottom: 6px;
+  }
+
+  &__items:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__value {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    margin-bottom: 28px;
+  }
+
+  &__reset {
+    font-size: 16px;
+    color: #bdbdbd;
+    cursor: pointer;
+  }
+
+  &__minus,
+  &__plus {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c41e3a;
+    cursor: pointer;
+  }
+
+  &__input {
+    font-family: $medium;
+    font-size: 18px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+
+  &__cabinet {
+    font-family: $medium;
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  &__cabinet img {
+    margin-right: 8px;
+  }
+
+  &__arrange {
+    width: 100%;
+    min-height: 573px;
+    background: #ffffff;
+    box-shadow: 12px 12px 24px rgba(75, 92, 88, 0.12);
+    border-radius: 10px;
+    padding: 27px 30px 30px 30px;
+  }
+
+  &__arrange h2 {
+    font-family: $medium;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 32px;
+  }
+
+  &__arrange h5 {
+    font-family: $medium;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  &__arrange p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  &__arrange a {
+    font-family: $medium;
+    font-size: 14px;
+    color: #c41e3a;
+    text-decoration: underline;
+  }
+
+  &__arrange-obertka {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrange-promocod {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c41e3a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  p.basket__promocod {
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 32px;
+  }
+
+  &__arrange-promocod input {
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #4b5c58;
+    margin-right: 15px;
+  }
+
+  &__arrange-promocod a {
+    font-size: 16px;
+    font-family: $medium;
+    color: #c41e3a;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+
+  p.basket__delivery {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+  }
+
+  p.basket__delivery strong {
+    font-family: $bold;
+  }
+
+  p.basket__oplata {
+    font-family: $bold;
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 22px;
+  }
+
+  p.basket__oplata a {
+    color: red;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: "Gotham Pro-regular";
+  }
+}

@@ -1,0 +1,611 @@
+.games {
+  &__flex {
+    display: flex;
+  }
+
+
+
+  &__filtr-remove {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid  #afafaf;
+    display: none;
+  }
+
+  &__filtr-remove h4 {
+    font-family: $medium;
+    font-size: 20px;
+    color: #000;
+  }
+
+    &__burger {
+      width: 23px;
+      height: 19px;
+      cursor: pointer;
+      margin-right: 24px;
+    }
+  
+    &__burger-polosa1,
+    &__burger-polosa,
+    &__burger-polosa3 {
+      background: #45494c;
+      height: 3px;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: transform 0.6s ease;
+    }
+  
+    &__burger-polosa1.opend {
+      transform: rotate(45deg);
+      position: relative;
+      top: 9px;
+    }
+  
+    &__burger-polosa.opend {
+      opacity: 0;
+    }
+  
+    &__burger-polosa3.opend {
+      transform: rotate(-45deg);
+      position: relative;
+      bottom: 7px;
+    }
+  
+    &__burger-polosa3 {
+      margin-bottom: 0px;
+    }
+
+  &__filtr-dots img {
+   width: 23px;
+   height: 23px;
+  }
+
+  &__filtr-open {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0000006e;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__filtr-open.open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+  &__nav-bottom {
+    display: flex;
+    margin-top: 22px;
+  }
+
+  &__nav-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__nav-items a {
+    font-family: $medium;
+    font-size: 16px;
+    color: #4b5c58;
+    width: 32px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-items a.active {
+    background: #f28705;
+    border-radius: 2px;
+    color: #fff;
+  }
+
+  &__nav-btn {
+    width: 96px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f28705;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #000;
+    margin-left: 25px;
+  }
+
+  &__images-news {
+    position: absolute;
+    top: 18px;
+    left: 12px;
+  }
+
+  &__nastol-top {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nastol-top h4 {
+    font-family: $bold;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__nastol-top img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__slider-action {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+  }
+
+  &__selected-btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+    max-width: 650px;
+  }
+
+  &__selected-btn a {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 24px 10px 24px;
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    transition: all 0.5 ease;
+    border: 1px solid #c41e3a;
+    color: #45494c;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-bottom: 12px;
+  }
+
+  &__selected-btn a:hover {
+    background-color: #c41e3a;
+    color: #fff;
+  }
+
+  &__selected-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+
+  &__select {
+    width: 156px;
+    border: 1px solid #f28705;
+    border-radius: 4px;
+    position: relative;
+    padding: 8px 22px 8px 22px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__select button,
+  &__select label {
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+  }
+
+  &__select button {
+    position: relative;
+    padding-right: 12px;
+    text-align: left;
+  }
+
+  &__select button::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background: url("../images/selectcheck.svg") no-repeat;
+  }
+
+  &__option {
+    margin-top: 10px;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__open-js {
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    overflow: hidden;
+  }
+
+  &__open-js.open {
+    height: auto;
+    min-height: 114px;
+    opacity: 1;
+  }
+
+  h1 {
+    font-family: $medium;
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 16px;
+    margin-top: 27px;
+  }
+
+  h1.games__filtr-dots  {
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+  }
+
+  h1.games__filtr-dots img {
+    margin-right: 6px;
+  }
+
+  h1 span {
+    font-size: 16px;
+    color: #7f7f7f;
+  }
+
+  &__slider-flex {
+    display: flex;
+    align-items: start;
+  }
+
+  &__slider-inner {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  &__slider {
+    width: 503px;
+  }
+
+  &__slider img {
+    margin-left: -6px;
+  }
+
+  &__arrow {
+    font-size: 32px;
+    position: absolute;
+    top: 41%;
+    transform: translate(0, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-slider {
+    margin-left: 12px;
+    transform: rotate(180deg);
+    transition: all 0.5s;
+  }
+
+  &__left-slider:hover,
+  &__right-slider:hover {
+    opacity: 0.5;
+  }
+
+  &__right-slider {
+    margin-right: 12px;
+  }
+
+  &__delivery {
+    width: 397px;
+    min-height: 200px;
+    background: #ffffff;
+    box-shadow: 12px 12px 16px rgba(75, 92, 88, 0.08);
+    border-radius: 10px;
+    padding: 30px 15px 30px 18px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+  }
+
+  p span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: #09a603;
+  }
+
+  p:nth-child(2) {
+    margin-bottom: 0px;
+  }
+
+  h5 {
+    font-family: $medium;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+  }
+
+  h5:last-child {
+    margin-top: 12px;
+  }
+
+  h5 img {
+    margin-right: 8px;
+  }
+
+  &__checkbox.margin {
+    margin-top: 20px;
+  }
+
+  &__filter {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .noUi-target {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    background: #4b5c582e;
+    max-width: 168px;
+  }
+
+  .noUi-horizontal {
+    height: 1px;
+  }
+
+  .noUi-handle {
+    position: relative;
+  }
+
+  .noUi-handle:before {
+    display: none;
+  }
+
+  .noUi-handle:after {
+    display: none;
+  }
+
+  .noUi-handle {
+    background: #f2f2f2;
+    border: 1px solid #c41e3a;
+    border-radius: 50%;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 9px;
+    height: 9px;
+  }
+
+  .noUi-connect {
+    background: #c41e3a;
+  }
+
+  //position ползунки
+  .noUi-horizontal .noUi-handle {
+    right: -17px;
+    margin-top: 2px;
+  }
+
+  &__price-input {
+    width: 68px;
+    height: 25px;
+    border-bottom: 1px solid #c41e3a;
+    font-family: $medium;
+    font-size: 14px;
+    color: #4b5c58;
+  }
+
+  &__price-input.min,
+  &__price-input.max,
+  &__price-input.min1,
+  &__price-input.max1 {
+    border-bottom: none;
+  }
+
+  &__price-input:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__checkbox {
+    display: flex;
+  }
+
+  &__checkbox &__checkbox-box {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    border: none;
+    background-color: none;
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #828282;
+    margin-bottom: 20px;
+  }
+
+  [type="checkbox"] {
+    padding: 0;
+  }
+
+  .games &__checkbox-title h6 {
+    font-family: $medium;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+    width: 152px;
+    flex: 0 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .games &__checkbox-titlesquare {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 24px;
+  }
+
+  &__checkbox-title {
+    cursor: pointer;
+    position: relative;
+    padding-right: 42px;
+  }
+
+  &__checkbox-title span {
+    color: red;
+  }
+
+  &__checkbox-title:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 15px;
+    border: 1px solid #dedede;
+    position: absolute;
+    border-radius: 15px;
+    top: 2px;
+    right: 0px;
+  }
+
+  &__checkbox-titlesquare:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    border-radius: 2px;
+    border: 1px solid #c41e3a;
+  }
+
+  &__checkbox-title::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    right: 17px;
+    background-color: #dedede;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+    border-radius: 50%;
+  }
+
+  &__checkbox-titlesquare::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+    border-radius: 50%;
+    background: #c41e3a;
+    border-radius: 2px;
+    opacity: 0;
+  }
+
+  &__posmotret {
+    font-size: 12px;
+    color: #c41e3a;
+    margin-bottom: 40px;
+  }
+
+  &__checkbox-box:checked + &__checkbox-title::before {
+    border: 1px solid #c41e3a;
+  }
+
+  &__checkbox-box:checked + &__checkbox-title::after {
+    right: 0px;
+    background-color: #c41e3a;
+  }
+
+  &__checkbox-box:checked + &__checkbox-titlesquare::after {
+    opacity: 1;
+  }
+
+  &__items:nth-child(1) {
+    width: 264px;
+    flex: 0 0 auto;
+    margin-top: 71px;
+    margin-right: 49px;
+  }
+
+  h6 {
+    font-family: $medium;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  ul li a {
+    font-size: 16px;
+    color: #000;
+  }
+
+  ul li a.red {
+    color: red;
+  }
+
+  h1.games__filtr-dots {
+    display: none;
+  }
+}
